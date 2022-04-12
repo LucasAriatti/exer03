@@ -30,7 +30,7 @@
 
 <script>
     function excluir(id){
-        if (confirm(`Deseja realmente excluir o cliente ${id}?`)){
+        if (confirm(`Deseja realmente excluir o fornecedor ${id}?`)){
             location.href = route('clientes_excluir', {'id':id});
         }
     }

@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('nomeProduto', 200);
             $table->string('preco', 10);
             $table->double('peso', 10, 2);
+            $table->unsignedBigInteger('id_fornecedor');
+            $table->foreign('id_fornecedor')->references('id')->on('fornecedores');
             $table->timestamps();
         });
     }

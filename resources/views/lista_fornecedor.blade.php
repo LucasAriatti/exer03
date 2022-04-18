@@ -10,7 +10,8 @@
             <th>Endereco</th>
             <th>Cep</th>
             <th>Cidade</th>
-            <th>Estado</th>    
+            <th>Estado</th>
+            <th>Produtos</th>    
             <th>Operações</th>
         </tr>
     </thead>
@@ -24,6 +25,7 @@
         <td>{{ $f->cep }}</td>
         <td>{{ $f->cidade }}</td>
         <td>{{ $f->estado }}</td>
+        <td><a href="{{route('produtos_por_fornecedor',['id_fornecedor'=>$f->id])}}">Produtos</a</td>
         <td>
             <a href="{{ route('fornecedores_alterar', ['id' => $f->id]) }}" class="btn btn-warning">Alterar</a>
             <a href="#" onclick="excluir({{ $f->id }})" class="btn btn-danger">Excluir</a>

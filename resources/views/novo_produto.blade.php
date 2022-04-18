@@ -17,9 +17,12 @@ Produto - Novo
     <input type="text" name="preco"  class="texto"><br>
     <label class="labels">peso</label>
     <input type="text" name="peso"  class="texto"><br>
-    
-    
+
+
+    <label  class="labels">Fornecedor</label>
+    <input type="text" name="id_fornecedor"class="texto"><br>
     <input type="submit" value="Enviar" class="enviar">
+</select><br>
 
 </form>
 @endsection

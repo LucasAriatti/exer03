@@ -19,9 +19,8 @@ use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\HomeController;
 
 
-Route::get('/laravel', function () {
-    return view('welcome');
-});
+
+
 
 Route::get(
     '/clientes/novo',
@@ -56,7 +55,7 @@ Route::get('/fornecedor/excluir/{id}', [FornecedoresController::class, 'excluir'
 //__________________________________________________________________________________________________________________
 //produtos
 
-//fornecedores
+
 
 Route::get('/produtos/novo', [ProdutosController::class, 'cadastro_novo']);
 
@@ -70,6 +69,7 @@ Route::post('/produtos/alterar/', [ProdutosController::class, 'salvar'])->name('
 
 Route::get('/produtos/excluir/{id}', [ProdutosController::class, 'excluir'])->name('produtos_excluir');
 
+Route::get('/produtos/fornecedor/{id_fornecedor}', [ProdutosController::class, 'produtos_fornecedor'])->name('produtos_por_fornecedor');
 
 //______________________________________________________________________________________________________
 //Home 

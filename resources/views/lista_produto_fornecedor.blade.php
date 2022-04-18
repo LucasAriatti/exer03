@@ -6,7 +6,6 @@
     <thead>
         <tr>
             <th>ID</th>
-            
             <th>Produto</th>
             <th>Preco</th>
             <th>peso</th>
@@ -16,7 +15,7 @@
     </thead>
     <tbody>
 
-    @foreach($produto as $p)
+    @foreach ($fornecedor->produtos as $p)
     <tr>
         <td>{{ $p->id }}</td>
         <td>{{ $p->nomeProduto }}</td>

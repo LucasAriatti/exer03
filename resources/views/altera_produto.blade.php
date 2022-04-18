@@ -18,6 +18,8 @@ Produto - Novo
     <input type="text" name="preco"  class="texto" value="{{ $produto->preco}}"></br>
     <label  class="labes">peso</label>
     <input type="text" name="peso"  class="texto" value="{{ $produto->peso}}"></br>
+    <label  class="labels">Fornecedor</label>
+    <input type="text" name="id_fornecedor"  class="texto" value="{{ $produto->id_fornecedor}}"><br>
     
     
     <input type="submit" value="Enviar" class="enviar">
